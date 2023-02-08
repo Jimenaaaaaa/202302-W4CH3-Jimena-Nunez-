@@ -1,7 +1,5 @@
-import { MOCK } from "../../features/character/mocks/character.mock";
 import { Character } from "../../features/character/page/character";
 import { Header } from "../header/header";
-import "./App.css";
 
 function App() {
   return (
