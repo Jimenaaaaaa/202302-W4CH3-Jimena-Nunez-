@@ -5,9 +5,8 @@ function App() {
   return (
     <>
       <Header></Header>
-      <main>
-        <Character></Character>
-      </main>
+
+      <Character></Character>
     </>
   );
 }
