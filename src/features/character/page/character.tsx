@@ -1,26 +1,11 @@
 import "./character.css";
-
 import { MOCK } from "../mocks/character.mock";
-
-// export type CharacterStructure = {
-//   name: string;
-//   family: string;
-//   age: string;
-//   alive: true;
-//   reignYears?: number;
-//   weapon?: string;
-//   skill?: string;
-//   boss?: string;
-//   servingLevel?: number;
-//   assesing?: string;
-//   emoji: string;
-// };
 
 export function Character() {
   return (
     <ul className="character-list">
       {MOCK.map((item) => (
-        <li className="character col">
+        <li className="character col" key={item.name}>
           <div className="card character__card">
             <img
               src={item.image}
